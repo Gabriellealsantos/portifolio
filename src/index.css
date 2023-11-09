@@ -1,0 +1,72 @@
+:root {
+  --pf-color-bg-primary: #000000;
+  --pf-color-bg-secondary: #FFFFFF;
+
+
+  --pf-color-card-bg: #000000;
+  --pf-color-card-border: #FFFFFF;
+
+  --pf-color-btn-primary: #000000;
+  --pf-color-btn-inverse: #FFFFFF;
+
+  --pf-color-font-primary: #000000;
+  --pf-color-font-secondary: #FFFFFF;
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html,
+body {
+  background-color: var(--dsc-color-bg-primary);
+}
+
+main {
+  padding: 0 20px;
+}
+
+/*-----------------------------------------------------------------*/
+/* generic styles */
+
+.pf-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pf-mb20 {
+  margin-bottom: 20px;
+}
+
+.pf-mt20 {
+  margin-top: 20px;
+}
+
+.pf-section-title {
+  text-align: center;
+  color: var(--dsc-color-font-primary);
+  font-size: 16px;
+}
+
+.pf-txt-left {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .pf-section-title {
+    text-align: left;
+    font-size: 24px;
+  }
+}
