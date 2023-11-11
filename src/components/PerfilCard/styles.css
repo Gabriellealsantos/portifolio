@@ -1,15 +1,14 @@
-.card {
+.card-perfil {
     text-align: center;
     max-width: 250px;
     box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
-    font-family: 'Quicksand', sans-serif;
     background-color: #FFFFFF;
     /* Cor branca para a parte superior do card */
     color: #000000;
     /* Cor preta para o texto na parte superior */
 }
 
-.card .content {
+.card-perfil .content-perfil {
     padding: 20px;
     background-color: #000000;
     /* Cor preta para a parte inferior do card */
@@ -17,12 +16,13 @@
     /* Cor branca para o texto na parte inferior */
 }
 
-.content p {
+.content-perfil p {
     font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
 }
 
-.card img {
+.card-perfil img {
     width: 130px;
 }
 
@@ -37,14 +37,14 @@ p {
 }
 
 
-.footer {
+.footer-card-perfil {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.footer img {
+.footer-card-perfil img {
     width: 30px;
     margin: 40px; /* Ajuste o espaçamento conforme necessário */
 }

@@ -1,0 +1,32 @@
+.card-description {
+    max-width: 270px;
+    box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-description h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.card-description p {
+    margin-top: 20px;
+}
+
+.card-description .bold-description {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-description h3.larger-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+}
