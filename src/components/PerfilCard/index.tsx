@@ -1,7 +1,7 @@
-import './styles.css';
 import gabImg from '../../assets/Gabriel.png';
-import LinkedinImg from '../../assets/Linkedin.svg';
 import gitImg from '../../assets/GitHub.svg';
+import LinkedinImg from '../../assets/Linkedin.svg';
+import './styles.css';
 
 export default function PerfilCard() {
   return (
@@ -13,8 +13,12 @@ export default function PerfilCard() {
         <p>Backend</p>
       </div>
       <div className="footer-card-perfil">
-        <img src={LinkedinImg} alt="Linkedin" />
-        <img src={gitImg} alt="GitHub" />
+        <a href="https://www.linkedin.com/in/gabriel-leal-santos/" target="_blank" rel="noopener noreferrer">
+          <img src={LinkedinImg} alt="Linkedin" />
+        </a>
+        <a href="https://github.com/Gabriellealsantos" target="_blank" rel="noopener noreferrer">
+          <img src={gitImg} alt="GitHub" />
+        </a>
       </div>
     </div>
   );

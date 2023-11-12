@@ -30,3 +30,12 @@ h1 {
     height: 15px;
     background-color: #000;
 }
+
+.activated {
+    font-weight: 700;
+}
+
+
+.disabled {
+    font-weight: 400;
+}

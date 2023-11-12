@@ -1,14 +1,13 @@
-import Home from "./routes/PfHome/Home"
+import PortifolioHome from "./routes/PortifolioHome"
 
 
-function App() {
-
+export default function App() {
 
   return (
     <>
-      <Home />
+      <PortifolioHome />
     </>
   )
 }
 
-export default App
+

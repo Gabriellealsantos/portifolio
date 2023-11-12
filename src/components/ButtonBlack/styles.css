@@ -1,0 +1,6 @@
+.pf-btn-black {
+    background-color: var(--pf-color-btn-primary);
+    color: var(--pf-color-btn-inverse);
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}

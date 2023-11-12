@@ -2,7 +2,7 @@ import './styles.css';
 
 export default function DescriptionCard() {
     return (
-        <div className="card-description">
+        <div className="card-description pf-mb20">
             <div className="content-description">
                 <h3 className="bold-description larger-text">Olá</h3>
                 <p className="bold-description">Meu perfil e meus projetos</p>
