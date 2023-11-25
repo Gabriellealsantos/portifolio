@@ -1,32 +1,60 @@
-.card-description {
-    max-width: 270px;
+.pf-card-description {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
     box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
     font-family: 'Quicksand', sans-serif;
     background-color: #FFFFFF;
     color: #000000;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 25px;
 }
 
-.card-description h3 {
+.pf-card-description h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 36px;
     text-align: center;
 }
 
-.card-description p {
+.pf-card-description p {
     margin-top: 20px;
 }
 
-.card-description .bold-description {
+.pf-card-description .pf-bold-description {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+    text-align: center;
 }
 
-.card-description h3.larger-text {
+.pf-card-description h3.pf-larger-text {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 80px;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .pf-content-description {
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pf-card-description {
+        box-shadow: none;
+    }
+
+    .pf-bold-description {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .pf-btn-page-container {
+        justify-content: flex-start;
+        padding: 0 10px 10px 0;
+    }
+
 }

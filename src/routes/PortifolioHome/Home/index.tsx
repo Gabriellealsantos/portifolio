@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-import ButtonBlack from '../../../components/ButtonBlack';
 import DescriptionCard from '../../../components/DescriptionCard';
+import FooterPf from '../../../components/FooterPf';
 import PerfilCard from '../../../components/PerfilCard';
 import './styles.css';
 
@@ -8,16 +7,16 @@ export default function Home() {
     return (
         <main>
             <section id="pf-section" className="pf-container">
-                <PerfilCard />
-                <DescriptionCard />
-                <div className="pf-btn-page-container">
-                    <Link to="/project"><ButtonBlack text={'projetos'} /></Link>
-                    <Link to="/curriculum"> <ButtonBlack text={'currículo'} /></Link> 
+
+                <div className="container-card">
+                    <PerfilCard />
+                    <DescriptionCard />
                 </div>
 
             </section>
 
-
+            <FooterPf />
+            
         </main>
     );
 }

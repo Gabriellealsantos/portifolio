@@ -1,15 +1,33 @@
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 15px;
+    justify-content: space-between;
     height: 100px;
     background-color: var(--pf-color-bg-secondary);
     color: var(--dsc-color-font-primary);
 }
 
-.header-content {
+.pf-header-content {
     display: flex;
     align-items: center;
+}
+
+.pf-dev-content {
+    display: flex;
+    align-items: center;
+}
+
+.pf-dev-content h1 {
+    margin-right: 5px;
+    font-size: 19px;
+}
+
+.pf-dev-content p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -19,23 +37,68 @@ h1 {
 
 .pf-nav-container {
     display: flex;
-    gap: 15px;
-    font-size: 14px;
+    gap: 5px;
+    font-size: 12px;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
 }
 
-.black-square {
+.pf-black-square {
     width: 15px;
     height: 15px;
     background-color: #000;
 }
 
-.activated {
+.pf-activated {
     font-weight: 700;
 }
 
 
-.disabled {
+.pf-disabled {
     font-weight: 400;
+}
+
+
+@media (max-width: 575px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .pf-nav-container {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .pf-nav-container .visibility {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .pf-dev-content h1 {
+        font-size: 28px;
+    }
+
+    .pf-dev-content p {
+        font-size: 18px;
+    }
+
+    .dev-content h1 {
+        font-size: 24px;
+    }
+
+    .dev-content p {
+        display: none;
+    }
+
+
+    .pf-nav-container {
+        font-size: 14px;
+    }
+
+
 }

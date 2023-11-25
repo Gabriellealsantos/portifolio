@@ -34,7 +34,8 @@ a:hover {
 
 html,
 body {
-  min-height: 100vh; /* Garante que o corpo da página ocupa pelo menos toda a altura da viewport */
+  min-height: 100vh;
+  /* Garante que o corpo da página ocupa pelo menos toda a altura da viewport */
   background: linear-gradient(to right, var(--pf-color-bg-primary) 40%, var(--pf-color-bg-secondary) 35%);
 }
 
@@ -70,14 +71,20 @@ main {
   text-align: left;
 }
 
+.pf-visibility {
+  display: none;
+}
+
 
 /*-----------------------------------------------------------------*/
-/* button styles */
+/* container styles */
 
 .pf-btn-page-container {
   width: 100%;
   display: flex;
-  grid-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  grid-gap: 15px;
 }
 
 .pf-btn {
@@ -98,3 +105,14 @@ main {
     font-size: 24px;
   }
 }
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    background: linear-gradient(to bottom, var(--pf-color-bg-secondary) 45%, var(--pf-color-bg-primary) 35%);
+  }
+
+
+}
+

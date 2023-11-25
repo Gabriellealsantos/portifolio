@@ -1,25 +1,36 @@
 import gabImg from '../../assets/Gabriel.png';
 import gitImg from '../../assets/GitHub.svg';
-import LinkedinImg from '../../assets/Linkedin.svg';
+import linkedinImg from '../../assets/Linkedin.svg';
+import whatsImg from '../../assets/Wpp.svg'
+import instaImg from '../../assets/Instagram.svg'
 import './styles.css';
 
 export default function PerfilCard() {
   return (
-    <div className="card-perfil">
-      <div className="content-perfil">
+    <div className="pf-card-perfil">
+
+      <div className="pf-content-perfil border">
         <img src={gabImg} alt="Imagem do Desenvolvedor" />
         <h2>Gabriel Leal</h2>
         <p>Desenvolvedor</p>
         <p>Backend</p>
       </div>
-      <div className="footer-card-perfil">
+
+      <div className="pf-footer-card-perfil border">
         <a href="https://www.linkedin.com/in/gabriel-leal-santos/" target="_blank" rel="noopener noreferrer">
-          <img src={LinkedinImg} alt="Linkedin" />
+          <img src={linkedinImg} alt="Linkedin" />
         </a>
         <a href="https://github.com/Gabriellealsantos" target="_blank" rel="noopener noreferrer">
           <img src={gitImg} alt="GitHub" />
         </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img className="pf-visibility" src={whatsImg} alt="Whatsapp" />
+        </a>
+        <a href="https://www.instagram.com/__gabriel.leal__/" target="_blank" rel="noopener noreferrer">
+          <img className="" src={instaImg} alt="Instagram" />
+        </a>
       </div>
+
     </div>
   );
 }
