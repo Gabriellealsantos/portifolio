@@ -1,0 +1,34 @@
+html,
+body {
+    background: var(--pf-color-bg-primary)
+}
+
+.card-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+.title-container-curriculum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--pf-color-font-secondary);
+   
+}
+
+.square {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+}
+
+.title-container-experience {
+    display: flex;
+    color: var(--pf-color-font-secondary);
+    padding-left: 50px;
+    
+}

@@ -17,11 +17,7 @@ export default function HeaderPf() {
             </div>
 
             <nav className="pf-nav-container">
-
-                <NavLink to="/aboutme" className={({ isActive }) => isActive ? "pf-activated" : "pf-disabled"}>
-                    <p className="visibility">sobre mim</p>
-                </NavLink>
-
+                
                 <NavLink to="/curriculum" className={({ isActive }) => isActive ? "pf-activated" : "pf-disabled"}>
                     <p>curriculo</p>
                 </NavLink>

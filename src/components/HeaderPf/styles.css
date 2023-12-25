@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     justify-content: space-between;
     height: 100px;
     background-color: var(--pf-color-bg-secondary);
@@ -37,7 +37,7 @@ h1 {
 
 .pf-nav-container {
     display: flex;
-    gap: 5px;
+    gap: 25px;
     font-size: 12px;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
