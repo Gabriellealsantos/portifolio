@@ -1,15 +1,23 @@
 import './styles.css';
 
-export default function CurriculumCard() {
+type Props = {
+    date: string;
+    office: string;
+    companyName: string;
+    companyLocation: string;
+}
+
+export default function CurriculumCard({date, office, companyName, companyLocation} : Props) {
+
     return (
         <>
             <div className="curriculum-card">
 
                 <div className="left-content">
-                    <p className="date">2022 - Atual</p>
-                    <p className="office">CARGO</p>
-                    <p className="company-name">Nome da Empresa</p>
-                    <p className="company-location">Localização da Empresa</p>
+                    <p className="date">{date}</p>
+                    <p className="office">{office}</p>
+                    <p className="company-name">{companyName}</p>
+                    <p className="company-location">{companyLocation}</p>
                 </div>
 
 

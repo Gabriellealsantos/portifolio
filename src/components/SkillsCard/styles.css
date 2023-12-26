@@ -1,0 +1,27 @@
+.skills-card {
+    width: 800px;
+    max-height: 975px;
+    margin-bottom: 110px;
+    padding: 10px;
+    background-color: var(--pf-color-bg-secondary);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    align-items: center;
+}
+
+.skills-card h3 {
+    padding: 50px 0 20px 50px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.skills-container {
+    width: 100%; /* Pode ajustar a largura conforme necessário */
+    max-height: 100%; /* Pode ajustar a altura conforme necessário */
+    display: grid;
+    grid-gap: 32px;
+    padding: 17px 0px 17px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
+}
+
