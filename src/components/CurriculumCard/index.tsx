@@ -23,8 +23,7 @@ export default function CurriculumCard({date, office, companyName, companyLocati
 
                 <div className="right-content">
                     <p className="text-curriculum">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, voluptatem magni.
-                        Officia mollitia suscipit, quae aliquam cumque eligendi, odio facilis iure voluptatum sequi esse corporis
-                        at quasi dolorum itaque cupiditate?</p>
+                        ?</p>
                 </div>
             </div>
         </>

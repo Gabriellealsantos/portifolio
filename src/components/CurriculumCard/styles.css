@@ -1,5 +1,5 @@
 .curriculum-card {
-    width: 700px;
+    max-width: 700px;
     height: 325px;
     background-color: var(--pf-color-bg-secondary);
     margin: 60px 50px;
@@ -10,14 +10,14 @@
 }
 
 .left-content {
-    float: left;
+    float: top;
     width: 50%;
     text-align: start;
     padding: 50px 20px 50px 40px;
 }
 
 .right-content {
-    float: right;
+    float: bottom;
     width: 50%;
     text-align: start;
     padding: 40px;
@@ -56,3 +56,86 @@
     font-weight: 400;
     margin: 0 0 4px 0;
 }
+@media (max-width: 575px) {
+
+    .curriculum-card {
+        max-height: 500px;
+        max-width: 500px;
+        margin: 15px 10px 50px 40px;
+        padding: 10px;
+    }
+
+    .left-content {
+        float: top;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .right-content { 
+        display: none;
+    }
+    
+    .right-content p  {  
+        float: bottom;
+        width: 50%;
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .curriculum-card {
+        width: 600px;
+        height: 325px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .curriculum-card {
+        height: 300px;
+        width: 270px;
+        margin: 15px 10px 50px 15px;
+        padding: 10px;
+    }
+
+    .left-content {
+        float: top;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .right-content { 
+        display: none;
+    }
+    
+    .right-content p  {  
+        float: bottom;
+        width: 50%;
+        display: none;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+    
+    .office {
+        font-size: 16px;
+    }
+    
+    .company-name {
+        font-size: 14px;
+    }
+    
+    .company-location {
+        font-size: 14px;
+    }
+}
+
