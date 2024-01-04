@@ -75,6 +75,17 @@ main {
   display: none;
 }
 
+.square {
+  width: 18px;
+  height: 18px;
+  background-color: var(--pf-color-bg-secondary);
+}
+
+.rectangular {
+  width: 10px;
+  height: 70px;
+  background-color: var(--pf-color-bg-primary);
+}
 
 /*-----------------------------------------------------------------*/
 /* container styles */

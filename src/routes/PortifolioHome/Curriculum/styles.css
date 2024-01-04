@@ -21,12 +21,6 @@ body {
    
 }
 
-.square {
-    width: 18px;
-    height: 18px;
-    background-color: white;
-}
-
 .title-container-experience {
     display: flex;
     color: var(--pf-color-font-secondary);

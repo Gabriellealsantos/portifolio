@@ -1,0 +1,54 @@
+.card-project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.card-project {
+    width: 450px;
+    height: 415px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--pf-color-bg-secondary);
+    color: var(--pf-color-font-primary);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.card-project h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.style-bar-container {
+    display: flex;
+}
+
+.card-project p {
+  padding: 8px 0px 0px 19px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 1024px) {
+    .card-project {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .card-project {
+        width: 310px;
+        height: 438px;
+    }
+
+    .card-project p {
+        font-size: 15px;
+      }
+      
+}
