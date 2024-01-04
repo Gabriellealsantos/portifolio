@@ -1,15 +1,28 @@
-html,
-body {
-    background: var(--pf-color-bg-primary)
+#curriculum-section {
+    background-color: black;
+    padding: 20px 0 110px 0;
 }
 
 .card-container {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    display: flex;
     flex-direction: column;
-   
-    
+    align-items: center;
+    margin: 0 auto;
+}
+
+.skill-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-curriculum-container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .title-container-curriculum {
@@ -22,8 +35,16 @@ body {
 }
 
 .title-container-experience {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     color: var(--pf-color-font-secondary);
-    padding-left: 50px;
-    
+    padding-left: 50px; 
+}
+
+@media (max-width: 639px) {
+    .card-curriculum-container {
+        flex-direction: column;
+    }
 }

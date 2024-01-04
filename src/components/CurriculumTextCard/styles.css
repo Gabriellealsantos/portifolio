@@ -1,0 +1,38 @@
+.card-curriculum-text {
+    width: 350px;
+    height: 325px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--pf-color-bg-secondary);
+    color: var(--pf-color-font-primary);
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centrilize-container-text {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+
+
+.card-curriculum-text p {
+    font-size: 14px;
+    color: var(--pf-color-ft-primary);
+}
+
+@media (max-width: 749px) {
+    .card-curriculum-text {
+        width: 250px;
+        height: 325px;
+    }
+}
+
+@media (max-width: 639px) {
+    .card-curriculum-text {
+        margin-top: 0;
+    }
+}

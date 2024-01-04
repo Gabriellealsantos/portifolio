@@ -1,6 +1,8 @@
-.project-container {
-
+#project-section {
+    background-color: black;
+    padding: 20px 0 50px 0;
 }
+
 
 .text-container {
     display: flex;
@@ -54,11 +56,6 @@
     align-items: center;
     flex-direction: column;
 }
-
-.dual-card-container {
-    display: flex;
-}
-
 
 @media (max-width: 1024px) {
     .dual-card-container {

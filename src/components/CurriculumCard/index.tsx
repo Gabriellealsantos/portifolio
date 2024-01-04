@@ -7,25 +7,19 @@ type Props = {
     companyLocation: string;
 }
 
-export default function CurriculumCard({date, office, companyName, companyLocation} : Props) {
+export default function CurriculumCard({ date, office, companyName, companyLocation}: Props) {
 
     return (
         <>
-            <div className="curriculum-card">
-
-                <div className="left-content">
-                    <p className="date">{date}</p>
-                    <p className="office">{office}</p>
-                    <p className="company-name">{companyName}</p>
-                    <p className="company-location">{companyLocation}</p>
+      
+                <div className="card-curriculum">
+                    <div className="centrilize-container">
+                        <p className="date">{date}</p>
+                        <p className="office">{office}</p>
+                        <p className="company-name">{companyName}</p>
+                        <p className="company-location">{companyLocation}</p>
+                    </div>
                 </div>
-
-
-                <div className="right-content">
-                    <p className="text-curriculum">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, voluptatem magni.
-                        ?</p>
-                </div>
-            </div>
         </>
     );
 }

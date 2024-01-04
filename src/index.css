@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap');
 
-
-
 :root {
   --pf-color-bg-primary: #000000;
   --pf-color-bg-secondary: #FFFFFF;
@@ -87,6 +85,11 @@ main {
   background-color: var(--pf-color-bg-primary);
 }
 
+.dual-card-container {
+  display: flex;
+}
+
+
 /*-----------------------------------------------------------------*/
 /* container styles */
 
@@ -123,7 +126,6 @@ main {
   body {
     background: linear-gradient(to bottom, var(--pf-color-bg-secondary) 45%, var(--pf-color-bg-primary) 35%);
   }
-
-
+  
 }
 
