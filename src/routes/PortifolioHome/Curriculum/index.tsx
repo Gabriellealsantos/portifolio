@@ -10,7 +10,7 @@ export default function Curriculum() {
             <section id="curriculum-section" >
 
                 <div className="title-container-curriculum">
-                    <div className="square"></div>
+                    <div className="square-curriculum"></div>
                     <h1>Currículo</h1>
                 </div>
 

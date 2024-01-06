@@ -2,13 +2,14 @@
     width: 350px;
     height: 325px;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--pf-color-bg-secondary);
-    color: var(--pf-color-font-primary);
+    background-color: var(--pf-color-bg-fourth);
+    color: var(--pf-color-bg-secondary);
     margin-top: 20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 10px 10px 10px rgba(20, 17, 28, 1);
 }
 
 .centrilize-container-text {

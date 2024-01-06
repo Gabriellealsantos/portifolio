@@ -5,7 +5,7 @@ import HeaderPf from "../../components/HeaderPf";
 export default function PortifolioHome() {
     return (
         <>
-            <div className="">
+            <div>
                 <HeaderPf />
             </div>
             <Outlet />

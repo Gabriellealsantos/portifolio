@@ -9,10 +9,10 @@
     height: 415px;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--pf-color-bg-secondary);
-    color: var(--pf-color-font-primary);
+    background-color: var(--pf-color-bg-fourth);
     margin-top: 20px;
     margin-bottom: 25px;
+    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1);
 }
 
 .card-project h1 {
@@ -21,6 +21,21 @@
     font-size: 25px;
     text-align: left;
     padding: 0 5px;
+    color: var(--pf-color-font-fourth);
+}
+
+.card-project h1 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: var(--pf-color-font-secondary);
+}
+
+.container-project-p {
+    color: var(--pf-color-font-secondary);
 }
 
 .style-bar-container {

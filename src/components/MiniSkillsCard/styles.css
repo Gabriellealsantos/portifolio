@@ -1,8 +1,7 @@
 .mini-skills-card {
     width: 200px;
     height: 250px;
-    background-color: var(--pf-color-bg-primary);
-    color: var(--pf-color-bg-secondary);
+    background-color: var(--pf-color-bg-third);
     border-radius: 10px;
     box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
 }
@@ -10,14 +9,33 @@
 .mini-skills-card h1 {
     font-size: 20px;
     padding: 5px 10px 0px 10px;
-    border-bottom: 2px solid var(--pf-color-bg-secondary);
+    border-bottom: 2px solid var(--pf-color-font-fourth);
     margin-bottom: 10px;
+    color: var(--pf-color-font-fourth);
 }
 
-.mini-skills-card p {
+.container-p {
+    display: flex;
+}
+
+.skill-p {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Quicksand';
     padding: 2px;
     margin: 0;
+    color: var(--pf-color-font-secondary);
+}
+
+.state-p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Quicksand';
+    padding: 2px;
+    margin: 0;
+    color: var(--pf-color-font-fourth);
+}
+
+ul {
+    list-style-type: none;
 }

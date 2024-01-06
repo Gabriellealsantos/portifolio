@@ -1,8 +1,8 @@
 import gabImg from '../../assets/Gabriel.png';
-import gitImg from '../../assets/GitHub.svg';
-import linkedinImg from '../../assets/Linkedin.svg';
-import whatsImg from '../../assets/Wpp.svg'
-import instaImg from '../../assets/Instagram.svg'
+import gitImg from '../../assets/GitHub.png';
+import linkedinImg from '../../assets/Linkedin.png';
+import whatsImg from '../../assets/Wpp.png'
+import instaImg from '../../assets/Instagram.png'
 import './styles.css';
 
 export default function PerfilCard() {

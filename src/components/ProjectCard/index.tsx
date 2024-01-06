@@ -8,7 +8,7 @@ type Props = {
 };
 
 
-export default function ProjectCard({title, textOne, textTwo, textThree} : Props) {
+export default function ProjectCard({ title, textOne, textTwo, textThree }: Props) {
     return (
         <>
             <div className="card-project-container">
@@ -17,12 +17,16 @@ export default function ProjectCard({title, textOne, textTwo, textThree} : Props
                     <div className="header-card-container">
                         <div className="style-bar-container pf-mt20">
                             <div className="rectangular"></div>
-                            <h1 className="">{title} 🔗 Função </h1>
+                            <h1 className="">{title} 🔗 <p>Função</p></h1>
                         </div>
                     </div>
-                    <p>{textOne}</p>
-                    <p>{textTwo}</p>
-                    <p>{textThree}</p>
+                    <div className="container-project-p">
+                        <p>{textOne}</p>
+                        <p>{textTwo}</p>
+                        <p>{textThree}</p>
+
+                    </div>
+
                 </div>
             </div>
         </>

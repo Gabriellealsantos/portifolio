@@ -1,7 +1,7 @@
-import gitImg from '../../assets/GitHub.svg';
-import instaImg from '../../assets/Instagram.svg';
-import linkedinImg from '../../assets/Linkedin.svg';
-import whatsImg from '../../assets/Wpp.svg';
+import gitImg from '../../assets/GitHub.png';
+import instaImg from '../../assets/Instagram.png';
+import linkedinImg from '../../assets/Linkedin.png';
+import whatsImg from '../../assets/Wpp.png';
 import './styles.css';
 
 

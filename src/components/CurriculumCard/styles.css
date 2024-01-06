@@ -2,17 +2,13 @@
     width: 350px;
     height: 325px;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--pf-color-bg-secondary);
-    color: var(--pf-color-font-primary);
+    background-color: var(--pf-color-bg-fourth);
     margin-top: 20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.card-curriculum p {
-    color: var(--pf-color-ft-primary);
+    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1);    
 }
 
 .centrilize-container {
@@ -26,24 +22,28 @@
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 8px 0;
+    color: var(--pf-color-font-third);
 }
 
 .office {
     font-size: 16px;
     font-weight: 400;
     margin: 0 0 8px 0;
+    color: var(--pf-color-bg-secondary);
 }
 
 .company-name {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    color: var(--pf-color-bg-secondary);
 }
 
 .company-location {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    color: var(--pf-color-bg-secondary);
 }
 
 .text-curriculum {

@@ -19,15 +19,12 @@ export default function HeaderPf() {
             <nav className="pf-nav-container">
                 
                 <NavLink to="/curriculum" className={({ isActive }) => isActive ? "pf-activated" : "pf-disabled"}>
-                    <p>curriculo</p>
+                    <a href="">curriculo</a>
+                    
                 </NavLink>
 
                 <NavLink to="/project" className={({ isActive }) => isActive ? "pf-activated" : "pf-disabled"}>
-                    <p>projetos</p>
-                </NavLink>
-
-                <NavLink to="/contact" className={({ isActive }) => isActive ? "pf-activated" : "pf-disabled"}>
-                    <p>contato</p>
+                    <a href="">projetos</a>
                 </NavLink>
 
             </nav>

@@ -1,5 +1,5 @@
 #curriculum-section {
-    background-color: black;
+    background-color: var(--pf-color-bg-third);
     padding: 20px 0 110px 0;
 }
 
@@ -31,7 +31,7 @@
     justify-content: center;
     padding: 20px;
     color: var(--pf-color-font-secondary);
-   
+
 }
 
 .title-container-experience {
@@ -40,8 +40,15 @@
     margin: 0 auto;
     display: flex;
     color: var(--pf-color-font-secondary);
-    padding-left: 50px; 
+    padding-left: 50px;
 }
+
+.square-curriculum {
+    width: 18px;
+    height: 18px;
+    background-color: var(--pf-color-bg-sixth);
+}
+
 
 @media (max-width: 639px) {
     .card-curriculum-container {

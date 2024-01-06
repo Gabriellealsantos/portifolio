@@ -3,15 +3,16 @@
     max-height: 3000px;
     margin: 10px 10px 0px 10px;
     padding: 10px;
-    background-color: var(--pf-color-bg-secondary);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    background-color: var(--pf-color-bg-fourth);
     align-items: center;
+    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1); 
 }
 
 .skills-card h3 {
     padding: 50px 0 20px 50px;
     font-size: 30px;
     font-weight: 700;
+    color: var(--pf-color-font-secondary);
 
 }
 

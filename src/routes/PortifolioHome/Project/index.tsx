@@ -11,7 +11,7 @@ export default function Project() {
             <section id="project-section">
                 <div className="project-container">
                     <div className="title-container-project">
-                        <div className="square"></div>
+                        <div className="square-project"></div>
                         <h1>Projetos</h1>
                     </div>
                     <div className="text-container">

@@ -4,13 +4,13 @@
     max-width: 550px;
     margin: 0 auto;
     box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.7);
-    background-color: var(--pf-color-bg-secondary);
+    background-color: var(--pf-color-bg-fourth);
     color: var(--pf-color-bg-primary);
 }
 
 .pf-card-perfil .pf-content-perfil {
     padding: 20px;
-    background-color: var(--pf-color-bg-primary);
+    background-color: var(--pf-color-bg-fifth);
     color: var(--pf-color-bg-secondary);
 }
 .pf-content-perfil p {

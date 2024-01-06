@@ -13,7 +13,10 @@ export default function MiniSkillsCard({ title, states, skills }: Props) {
             <ul>
                 {states.map((state, index) => (
                     <li key={`state-${index}`}>
-                        {state} {skills[index]}
+                        <div className="container-p">
+                            <p className="state-p">{state}</p>
+                            <p className="skill-p">{skills[index]} </p>
+                        </div>
                     </li>
                 ))}
             </ul>

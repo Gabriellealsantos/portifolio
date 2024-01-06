@@ -13,6 +13,7 @@
     color: var(--pf-color-font-primary);
     margin-top: 20px;
     margin-bottom: 25px;
+    box-shadow: 10px 10px 10px rgba(20, 17, 28, 1);
 }
 
 .card-project-img-container:hover img {
