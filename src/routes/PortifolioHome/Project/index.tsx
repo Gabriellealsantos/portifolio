@@ -34,17 +34,6 @@ export default function Project() {
                         <ProjectCard title='GABRIEL LEAL | Portfólio' textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
                         <ProjectImgCard titleImg={portifolioImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
                     </div>
-
-                    <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio' textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
-                        <ProjectImgCard titleImg={portifolioImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
-                    </div>
-
-                    <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio' textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
-                        <ProjectImgCard titleImg={portifolioImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
-                    </div>
-
                 </div>
 
             </section>
