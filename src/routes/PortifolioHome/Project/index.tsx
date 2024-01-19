@@ -46,7 +46,7 @@ export default function Project() {
                             textOne='Nesta plataforma, compilo minhas aptidões, competências e vivências vinculadas à integração e manipulação de dados através da API do GitHub.'
                             textTwo='É o projeto mais meticuloso, informativo e bem estruturado que já elaborei a partir do zero, sem auxílio externo (algo que me enche de orgulho).'
                             textThree='Estarei constantemente enriquecendo esta plataforma com novos projetos, cada vez mais desafiadores, para fortalecer minha carreira como desenvolvedor.' />
-                        <ProjectImgCard titleImg={gitProjectImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
+                        <ProjectImgCard titleImg={gitProjectImg} urlImg='https://git-api-murex.vercel.app' />
                     </div>
                 </div>
 
