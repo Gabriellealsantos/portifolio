@@ -3,6 +3,7 @@ import FooterPf from '../../../components/FooterPf';
 import ProjectCard from '../../../components/ProjectCard';
 import ProjectImgCard from '../../../components/ProjectImgCard';
 import portifolioImg from '../../../assets/portifolio.png'
+import gitProjectImg from '../../../assets/gitproject.png'
 import './styles.css';
 
 export default function Project() {
@@ -31,8 +32,21 @@ export default function Project() {
 
                 <div className="project-card-container">
                     <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio' textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
+                        <ProjectCard title='GABRIEL LEAL | Portfólio' 
+                        textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' 
+                        textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' 
+                        textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
                         <ProjectImgCard titleImg={portifolioImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
+                    </div>
+                </div>
+
+                <div className="project-card-container">
+                    <div className="dual-card-container">
+                        <ProjectCard title='Profile Search | GitHub-API '
+                            textOne='Nesta plataforma, compilo minhas aptidões, competências e vivências vinculadas à integração e manipulação de dados através da API do GitHub.'
+                            textTwo='É o projeto mais meticuloso, informativo e bem estruturado que já elaborei a partir do zero, sem auxílio externo (algo que me enche de orgulho).'
+                            textThree='Estarei constantemente enriquecendo esta plataforma com novos projetos, cada vez mais desafiadores, para fortalecer minha carreira como desenvolvedor.' />
+                        <ProjectImgCard titleImg={gitProjectImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
                     </div>
                 </div>
 
