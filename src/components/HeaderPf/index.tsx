@@ -11,7 +11,7 @@ export default function HeaderPf() {
                 <Link to="/">
                     <div className="pf-dev-content">
                         <h1>Gabriel Leal</h1>
-                        <p>/ dev backend</p>
+                        <p>/ Dev Full Stack</p>
                     </div>
                 </Link>
             </div>

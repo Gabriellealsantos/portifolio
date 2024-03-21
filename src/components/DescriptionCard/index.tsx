@@ -16,7 +16,7 @@ export default function DescriptionCard() {
                     <Link to="/curriculum"> <ButtonBlack text={'currículo'} /></Link>
                 </div>
 
-                <p>Sou um Desenvolvedor Backend Júnior, estudante da Universidade Federal do IFBA BAIANO. Apaixonado por tecnologia, busco aprimorar minhas habilidades em Java, Spring Boot e controle de versão com Git, usando o GitHub para colaboração. Tenho experiência em projetos práticos e estou sempre em busca de oportunidades para aplicar meus conhecimentos, adquirir experiência real e crescer profissionalmente na área de tecnologia.</p>
+                <p>Sou um Desenvolvedor Full Stack, estudante da Universidade Federal do IFBA BAIANO. Apaixonado por tecnologia, busco aprimorar minhas habilidades em Java, Spring Boot e controle de versão com Git, usando o GitHub para colaboração. Tenho experiência em projetos práticos e estou sempre em busca de oportunidades para aplicar meus conhecimentos, adquirir experiência real e crescer profissionalmente na área de tecnologia.</p>
             </div>
         </div>
     );

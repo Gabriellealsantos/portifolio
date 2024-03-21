@@ -15,8 +15,11 @@ export default function Home() {
 
             </section>
 
-            <FooterPf />
-            
+            <div className='pass'>
+                <FooterPf />
+            </div>
+
+
         </main>
     );
 }

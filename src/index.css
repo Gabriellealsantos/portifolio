@@ -130,7 +130,7 @@ main {
 
   html,
   body {
-    background: linear-gradient(to bottom, var(--pf-color-bg-secondary) 45%, var(--pf-color-bg-primary) 35%);
+    background: linear-gradient(to bottom, var(--pf-color-bg-third) 45%, var(--pf-color-bg-fourth) 35%);
   }
   
 }

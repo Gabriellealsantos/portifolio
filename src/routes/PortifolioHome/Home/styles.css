@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.pass {
+    margin-top: 150px;
+}
   
 
 @media (max-width: 1024px) {
