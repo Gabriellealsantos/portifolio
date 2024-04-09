@@ -2,8 +2,9 @@ import gitSvg from '../../../assets/GitBranco.svg';
 import FooterPf from '../../../components/FooterPf';
 import ProjectCard from '../../../components/ProjectCard';
 import ProjectImgCard from '../../../components/ProjectImgCard';
-import portifolioImg from '../../../assets/portifolio.png'
-import gitProjectImg from '../../../assets/gitproject.png'
+import portifolioImg from '../../../assets/portifolio.png';
+import gitProjectImg from '../../../assets/gitproject.png';
+import lolProjectImg from '../../../assets/lol.png';
 import './styles.css';
 
 export default function Project() {
@@ -32,10 +33,10 @@ export default function Project() {
 
                 <div className="project-card-container">
                     <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio' 
-                        textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.' 
-                        textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).' 
-                        textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
+                        <ProjectCard title='GABRIEL LEAL | Portfólio'
+                            textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.'
+                            textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).'
+                            textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
                         <ProjectImgCard titleImg={portifolioImg} urlImg='https://github.com/Gabriellealsantos/portifolio' />
                     </div>
                 </div>
@@ -47,6 +48,16 @@ export default function Project() {
                             textTwo='É o projeto mais meticuloso, informativo e bem estruturado que já elaborei a partir do zero, sem auxílio externo (algo que me enche de orgulho).'
                             textThree='Estarei constantemente enriquecendo esta plataforma com novos projetos, cada vez mais desafiadores, para fortalecer minha carreira como desenvolvedor.' />
                         <ProjectImgCard titleImg={gitProjectImg} urlImg='https://git-api-murex.vercel.app' />
+                    </div>
+                </div>
+
+                <div className="project-card-container">
+                    <div className="dual-card-container">
+                        <ProjectCard title='League of Legends | Conversa com Campeões - API de IA'
+                            textOne='Neste projeto, desenvolvi uma plataforma interativa que permite aos jogadores conversarem com os campeões do League of Legends usando inteligência artificial.'
+                            textTwo='Esta plataforma oferece uma experiência única, permitindo que os usuários façam perguntas aos campeões e recebam respostas em tempo real, simulando conversas autênticas.'
+                            textThree='' />
+                        <ProjectImgCard titleImg={lolProjectImg} urlImg='https://ia-lol.vercel.app' />
                     </div>
                 </div>
 

@@ -15,7 +15,7 @@ export default function Home() {
 
             </section>
 
-            <div className='pass'>
+            <div className='mt-150'>
                 <FooterPf />
             </div>
 
