@@ -3,6 +3,13 @@
     padding: 20px 0 50px 0;
 }
 
+.project-img-card img {
+    height: 420px;
+    width: 450px !important;
+    object-fit: cover; /* Para garantir que a imagem cubra o espaço sem perder qualidade */
+}
+
+
 
 .text-container {
     display: flex;

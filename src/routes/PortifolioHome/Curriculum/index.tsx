@@ -22,17 +22,12 @@ export default function Curriculum() {
                 <div className="card-container">
                     
                     <div className="card-curriculum-container">
-                        <CurriculumCard date="2022 - Atual" office="CARGO" companyName="Nome da Empresa" companyLocation="Localização da Empresa" />
+                        <CurriculumCard date="2023 - Atual" office="Freelancer" companyName="Freelancer" companyLocation="Remoto" />
                         <CurriculumTextCard 
-                        textOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos doloribus nobis amet, eaque repellat magnam asperiores vel, Accusamus, repudiandae. numquam modi optio." 
-                        textTwo="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repudiandae." />
-                    </div>
-
-                    <div className="card-curriculum-container">
-                        <CurriculumCard date="2022 - Atual" office="CARGO" companyName="Nome da Empresa" companyLocation="Localização da Empresa" />
-                        <CurriculumTextCard 
-                        textOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos doloribus nobis amet, eaque repellat magnam asperiores vel, Accusamus, repudiandae. numquam modi optio." 
-                        textTwo="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repudiandae." />
+                        textOne="Desde 2023, trabalho como freelancer, oferecendo soluções em desenvolvimento de software. Tenho experiência em entregar projetos personalizados, focando sempre na qualidade e na satisfação do cliente."
+                        textTwo="Sou dedicado a criar soluções sob medida, sempre buscando novos desafios para expandir minhas habilidades e entregar resultados eficientes."
+                        
+                         />
                     </div>
 
                     <div className="title-container-experience">
