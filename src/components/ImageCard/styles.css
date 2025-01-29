@@ -32,6 +32,29 @@
     transform: scale(1.04);   
 }
 
+.image-link {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .style-bar-container {
+    align-items: center;
+    min-height: 60px;
+  }
+  
+  @media (max-width: 520px) {
+    .dual-card-container {
+      flex-direction: column;
+    }
+    
+    .card-base {
+      min-width: 100%;
+      height: auto;
+      min-height: 350px;
+    }
+  }
+
 @media (max-width: 1024px) {
     .card-project-img {
         margin-top: 0px;

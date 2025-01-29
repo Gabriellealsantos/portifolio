@@ -91,11 +91,6 @@ main {
   background-color: var(--pf-color-font-fourth);
 }
 
-.dual-card-container {
-  display: flex;
-}
-
-
 /*-----------------------------------------------------------------*/
 /* container styles */
 

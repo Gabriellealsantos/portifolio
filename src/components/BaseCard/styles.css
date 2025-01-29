@@ -1,0 +1,47 @@
+.dual-card-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.card-base {
+    flex: 1;
+    min-width: 450px;
+    min-height: 415px;
+    box-sizing: border-box;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-project p:last-child {
+    margin-bottom: 15px;
+}
+
+
+.card-base:hover {
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .card-base {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .card-base {
+        width: 310px;
+        height: 438px;
+    }
+
+    .project-image {
+        width: 310px;
+        height: 438px;
+    }
+}

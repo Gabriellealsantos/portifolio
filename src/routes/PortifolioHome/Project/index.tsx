@@ -1,14 +1,73 @@
+import dsCommerceImg from '../../../assets/dscommerce.png';
 import gitSvg from '../../../assets/GitBranco.svg';
-import FooterPf from '../../../components/FooterPf';
-import ProjectCard from '../../../components/ProjectCard';
-import ProjectImgCard from '../../../components/ProjectImgCard';
-import portifolioImg from '../../../assets/portifolio.png';
 import gitProjectImg from '../../../assets/gitproject.png';
 import lolProjectImg from '../../../assets/lol.png';
-import dsCommerceImg from '../../../assets/dscommerce.png';
+import portifolioImg from '../../../assets/portifolio.png';
+import deliveryImg from '../../../assets/Delivery.png';
+import FooterPf from '../../../components/FooterPf';
+import { ImageCard } from '../../../components/ImageCard';
+import { TextCard } from '../../../components/TextCard';
 import './styles.css';
 
 export default function Project() {
+    const projects = [
+        {
+            title: 'GABRIEL LEAL | Portfólio',
+            functionLabel: 'Função',
+            texts: [
+                'Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.',
+                'É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda.',
+                'Continuarei atualizando-o com novos projetos cada vez mais complexos.'
+            ],
+            image: dsCommerceImg,
+            link: 'https://www.linkedin.com/posts/gabriel-leal-santos_conclu%C3%AD-meu-curso-na-devsuperior-com-o-projeto-activity-7221602574993395712-HmIa'
+        },
+        {
+            title: 'GABRIEL LEAL | Portfólio',
+            functionLabel: 'Função',
+            texts: [
+                'Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.',
+                'Projeto construído com autonomia completa desde a concepção.',
+                'Atualizações constantes com novos desafios profissionais.'
+            ],
+            image: portifolioImg,
+            link: 'https://www.linkedin.com/posts/gabriel-leal-santos_bom-dia-galera-estou-animado-em-compartilhar-activity-7126550439151435776-YE9_'
+        },
+        {
+            "title": "Profile Search | GitHub-API",
+            "functionLabel": "Função",
+            "texts": [
+                "Aplicação interativa para busca e exibição de perfis do GitHub em tempo real.",
+                "Integração eficiente com a API do GitHub, permitindo acesso a repositórios, seguidores e outras informações.",
+                "Desenvolvido com foco em consumo de APIs externas e arquitetura escalável para futuras melhorias."
+            ],
+            "image": gitProjectImg,
+            "link": "https://www.linkedin.com/posts/gabriel-leal-santos_bom-dia-pessoal-estou-empolgado-em-compartilhar-activity-7206303763706339328-ylh9"
+        },
+        {
+            "title": "League of Legends | Chat com Campeões - IA",
+            "functionLabel": "Função",
+            "texts": [
+                "Experiência interativa que permite conversas dinâmicas com campeões de League of Legends.",
+                "Integração avançada com API de Inteligência Artificial para respostas imersivas e autênticas.",
+                "Projeto desenvolvido durante a Santander Dev Week 2024, explorando NLP e IA generativa."
+            ],
+            "image": lolProjectImg,
+            "link": "https://www.linkedin.com/posts/gabriel-leal-santos_durante-a-santander-dev-week-2024-tive-a-activity-7207037345882189824-4UJu"
+        },
+        {
+            title: 'Delivery | Sistema de Entregas',
+            functionLabel: 'Função',
+            texts: [
+                'Projeto de delivery completo, integrando web, mobile e back-end para uma experiência fluida.',
+                'Desenvolvido com Java (Spring Boot), ReactJS (TypeScript) e React Native, garantindo robustez e escalabilidade.',
+                'Utilização do PostgreSQL para armazenamento de dados e Mapbox/Google Maps para geolocalização e rotas',
+            ],
+            image: deliveryImg,
+            link: 'https://www.linkedin.com/feed/update/urn:li:activity:7283147378876952577/'
+        }
+    ];
+
     return (
         <>
             <section id="project-section">
@@ -17,65 +76,42 @@ export default function Project() {
                         <div className="square-project"></div>
                         <h1>Projetos</h1>
                     </div>
+
                     <div className="text-container">
                         <div className="text-with-icon">
-                            <p>Aqui ficam apenas alguns projetos que foram selecionados por terem funcionalidades </p>
-                            <p>distintas mas igualmente importantes para um Desenvolvedor.</p>
-                            <p>Esses três projetos serão substituídos por novos conforme o avanço das minhas habilidades.</p>
-                            <p>Caso deseje verificar todos os meus repositórios, é só clicar no Cat ao lado:
+                            <p>Projetos selecionados por suas funcionalidades distintas e relevância técnica.</p>
+                            <p>Estes serão gradualmente substituídos por novos conforme minha evolução profissional.</p>
+                            <p>
+                                Todos os repositórios disponíveis no GitHub:
                                 <a href="https://github.com/Gabriellealsantos" target="_blank" rel="noopener noreferrer">
-                                    <img src={gitSvg} alt="GitHub" />
+                                    <img src={gitSvg} alt="GitHub" className="github-icon" />
                                 </a>
                             </p>
                         </div>
                     </div>
-
                 </div>
 
-                <div className="project-card-container">
-                    <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio'
-                            textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.'
-                            textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).'
-                            textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
-                        <ProjectImgCard titleImg={dsCommerceImg} urlImg='https://www.linkedin.com/posts/gabriel-leal-santos_conclu%C3%AD-meu-curso-na-devsuperior-com-o-projeto-activity-7221602574993395712-HmIa?utm_source=share&utm_medium=member_desktop' />
+                {projects.map((project, index) => (
+                    <div className="project-card-container" key={index}>
+                        <div className="dual-card-container">
+                            <TextCard
+                                title={project.title}
+                                functionLabel={project.functionLabel}
+                                texts={project.texts}
+                            />
+
+                            <ImageCard
+                                title={project.title}
+                                imageUrl={project.image}
+                                linkUrl={project.link}
+                            />
+                        </div>
                     </div>
-                </div>
-
-                <div className="project-card-container">
-                    <div className="dual-card-container">
-                        <ProjectCard title='GABRIEL LEAL | Portfólio'
-                            textOne='Esse projeto reúne minhas habilidades, competências, qualificações e experiências profissionais.'
-                            textTwo='É o projeto mais profissional, descritivo e organizado que já construí do total zero e sem nenhuma ajuda (me orgulho disso).'
-                            textThree='Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor.' />
-                        <ProjectImgCard titleImg={portifolioImg} urlImg='https://www.linkedin.com/posts/gabriel-leal-santos_bom-dia-galera-estou-animado-em-compartilhar-activity-7126550439151435776-YE9_?utm_source=share&utm_medium=member_desktop' />
-                    </div>
-                </div>
-
-                <div className="project-card-container">
-                    <div className="dual-card-container">
-                        <ProjectCard title='Profile Search | GitHub-API '
-                            textOne='Nesta plataforma, compilo minhas aptidões, competências e vivências vinculadas à integração e manipulação de dados através da API do GitHub.'
-                            textTwo='É o projeto mais meticuloso, informativo e bem estruturado que já elaborei a partir do zero, sem auxílio externo (algo que me enche de orgulho).'
-                            textThree='Estarei constantemente enriquecendo esta plataforma com novos projetos, cada vez mais desafiadores, para fortalecer minha carreira como desenvolvedor.' />
-                        <ProjectImgCard titleImg={gitProjectImg} urlImg='https://www.linkedin.com/posts/gabriel-leal-santos_bom-dia-pessoal-estou-empolgado-em-compartilhar-activity-7206303763706339328-ylh9?utm_source=share&utm_medium=member_desktop' />
-                    </div>
-                </div>
-
-                <div className="project-card-container">
-                    <div className="dual-card-container">
-                        <ProjectCard title='League of Legends | Conversa com Campeões - API de IA'
-                            textOne='Neste projeto, desenvolvi uma plataforma interativa que permite aos jogadores conversarem com os campeões do League of Legends usando inteligência artificial.'
-                            textTwo='Esta plataforma oferece uma experiência única, permitindo que os usuários façam perguntas aos campeões e recebam respostas em tempo real, simulando conversas autênticas.'
-                            textThree='' />
-                        <ProjectImgCard titleImg={lolProjectImg} urlImg='https://www.linkedin.com/posts/gabriel-leal-santos_durante-a-santander-dev-week-2024-tive-a-activity-7207037345882189824-4UJu?utm_source=share&utm_medium=member_desktop' />
-                    </div>
-                </div>
+                ))}
 
             </section>
 
             <FooterPf />
-
         </>
     );
 }

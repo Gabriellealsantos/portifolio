@@ -39,6 +39,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 20px;
 }
 
 .pf-footer-card-perfil img {
