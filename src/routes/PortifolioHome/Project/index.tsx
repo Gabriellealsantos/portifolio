@@ -21,7 +21,7 @@ export default function Project() {
                 'Continuarei atualizando-o com novos projetos cada vez mais complexos.'
             ],
             image: dsCommerceImg,
-            link: 'https://www.linkedin.com/posts/gabriel-leal-santos_conclu%C3%AD-meu-curso-na-devsuperior-com-o-projeto-activity-7221602574993395712-HmIa',
+            link: 'https://ds-commerce-rho.vercel.app',
             github: 'https://github.com/Gabriellealsantos/-DSCommerce'
         },
         {
