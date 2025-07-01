@@ -21,7 +21,7 @@ export default function Project() {
                 'Continuarei atualizando-o com novos projetos cada vez mais complexos.'
             ],
             image: dsCommerceImg,
-            link: 'https://ds-commerce-rho.vercel.app',
+            link: 'https://www.linkedin.com/posts/gabriel-leal-santos_conclu%C3%AD-meu-curso-na-devsuperior-com-o-projeto-activity-7221602574993395712-HmIa',
             github: 'https://github.com/Gabriellealsantos/-DSCommerce'
         },
         {
@@ -57,7 +57,7 @@ export default function Project() {
                 'Projeto desenvolvido durante a Santander Dev Week 2024, explorando NLP e IA generativa.'
             ],
             image: lolProjectImg,
-            link: 'https://ia-lol.vercel.app',
+            link: 'https://www.linkedin.com/posts/gabriel-leal-santos_durante-a-santander-dev-week-2024-tive-a-activity-7207037345882189824-4UJu',
             github: 'https://github.com/Gabriellealsantos/IALol'
         },
         {
@@ -69,7 +69,7 @@ export default function Project() {
                 'Utilização do PostgreSQL para armazenamento de dados e Mapbox/Google Maps para geolocalização e rotas.'
             ],
             image: deliveryImg,
-            link: 'https://delivery-neon.vercel.app',
+            link: 'https://www.linkedin.com/feed/update/urn:li:activity:7283147378876952577/',
             github: 'https://github.com/Gabriellealsantos/Delivery'
         },
         {
