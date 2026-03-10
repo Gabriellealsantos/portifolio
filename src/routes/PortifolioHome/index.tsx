@@ -4,11 +4,11 @@ import HeaderPf from "../../components/HeaderPf";
 
 export default function PortifolioHome() {
     return (
-        <>
-            <div>
-                <HeaderPf />
+        <div className="app-layout">
+            <HeaderPf />
+            <div className="app-content">
+                <Outlet />
             </div>
-            <Outlet />
-        </>
+        </div>
     )
 }

@@ -1,11 +1,18 @@
 header {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0 28px;
     justify-content: space-between;
-    height: 100px;
-    background-color: var(--pf-color-bg-fourth);
+    height: 70px;
+    background: rgba(12, 10, 20, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     color: var(--pf-color-bg-secondary);
+    border-bottom: 1px solid var(--pf-glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
 }
 
 .pf-header-content {
@@ -21,13 +28,16 @@ header {
 .pf-dev-content h1 {
     margin-right: 5px;
     font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
-.pf-dev-content a {
+.pf-dev-content p {
     font-size: 14px;
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
+    color: var(--pf-color-ft-primary);
 }
 
 h1 {
@@ -38,40 +48,67 @@ h1 {
 .pf-nav-container {
     display: flex;
     gap: 25px;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .pf-black-square {
-    width: 15px;
-    height: 15px;
-    background-color: var(--pf-color-bg-secondary);
+    width: 14px;
+    height: 14px;
+    background: var(--pf-gradient-purple);
+    border-radius: 3px;
 }
 
 .pf-activated {
     font-weight: 700;
+    color: var(--pf-color-font-secondary);
 }
-
 
 .pf-disabled {
     font-weight: 400;
+    color: var(--pf-color-ft-primary);
 }
 
 nav a {
     text-decoration: none;
-    transition: color 0.1s ease; 
-  }
-  
-  nav a:hover {
-    color: var(--pf-color-btn-primary); 
-  }
+    position: relative;
+    transition: color 0.25s ease;
+    padding-bottom: 4px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--pf-gradient-purple);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover {
+    color: var(--pf-color-font-secondary);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.pf-activated a::after {
+    width: 100%;
+}
 
 
 @media (max-width: 575px) {
-
     header {
         flex-direction: column;
+        height: auto;
+        padding: 12px 20px;
+        gap: 8px;
     }
 
     .pf-nav-container {
@@ -82,32 +119,19 @@ nav a {
     .pf-nav-container .visibility {
         display: none;
     }
-
 }
 
 
 @media (min-width: 768px) {
-
     .pf-dev-content h1 {
-        font-size: 28px;
-    }
-
-    .pf-dev-content p {
-        font-size: 18px;
-    }
-
-    .dev-content h1 {
         font-size: 24px;
     }
 
-    .dev-content p {
-        display: none;
+    .pf-dev-content p {
+        font-size: 16px;
     }
-
 
     .pf-nav-container {
         font-size: 14px;
     }
-
-
 }

@@ -5,21 +5,14 @@ import './styles.css';
 
 export default function Home() {
     return (
-        <main>
-            <section id="pf-section" className="pf-container">
-
-                <div className="container-card">
+        <main className="home-main">
+            <section className="home-cards-section">
+                <div className="home-cards-row">
                     <PerfilCard />
                     <DescriptionCard />
                 </div>
-
             </section>
-
-            <div className='mt-150'>
-                <FooterPf />
-            </div>
-
-
+            <FooterPf />
         </main>
     );
 }

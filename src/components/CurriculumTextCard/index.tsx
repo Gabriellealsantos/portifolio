@@ -2,10 +2,11 @@ import './styles.css';
 
 type Props = {
     textOne: string;
-    textTwo: string;
+    textTwo?: string;
+    bullets?: string[];
 }
 
-export default function CurriculumTextCard({ textOne, textTwo }: Props) {
+export default function CurriculumTextCard({ textOne, textTwo, bullets }: Props) {
 
     return (
         <>
@@ -13,7 +14,14 @@ export default function CurriculumTextCard({ textOne, textTwo }: Props) {
             <div className="card-curriculum-text">
                 <div className="centrilize-container-text">
                     <p>{textOne}</p>
-                    <p>{textTwo}</p>
+                    {textTwo && <p>{textTwo}</p>}
+                    {bullets && bullets.length > 0 && (
+                        <ul className="curriculum-bullets">
+                            {bullets.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             </div>
         </>

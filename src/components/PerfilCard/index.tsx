@@ -9,8 +9,7 @@ export default function PerfilCard() {
       <div className="pf-content-perfil border">
         <img src={gabImg} alt="Imagem do Desenvolvedor" />
         <h2>Gabriel Leal</h2>
-        <p>Desenvolvedor</p>
-        <p>Back-End</p>
+        <p>Desenvolvedor Backend</p>
       </div>
 
       <div className="pf-footer-card-perfil">

@@ -1,6 +1,7 @@
 .card-curriculum {
     width: 350px;
-    height: 325px;
+    min-height: 325px;
+    height: auto;
     font-family: 'Quicksand', sans-serif;
     background-color: var(--pf-color-bg-fourth);
     margin-top: 20px;
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1);    
+    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1);
 }
 
 .centrilize-container {

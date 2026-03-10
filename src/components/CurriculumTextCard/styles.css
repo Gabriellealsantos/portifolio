@@ -1,6 +1,7 @@
 .card-curriculum-text {
     width: 350px;
-    height: 325px;
+    min-height: 325px;
+    height: auto;
     font-family: 'Quicksand', sans-serif;
     background-color: var(--pf-color-bg-fourth);
     color: var(--pf-color-bg-secondary);
@@ -16,7 +17,7 @@
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    padding-left: 5px;
+    padding: 15px 5px;
 }
 
 
@@ -25,10 +26,33 @@
     color: var(--pf-color-ft-primary);
 }
 
+.curriculum-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.curriculum-bullets li {
+    font-size: 13px;
+    color: var(--pf-color-ft-primary);
+    padding: 4px 0;
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.curriculum-bullets li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--pf-color-bg-sixth);
+    font-size: 14px;
+}
+
 @media (max-width: 749px) {
     .card-curriculum-text {
         width: 250px;
-        height: 325px;
+        min-height: 325px;
     }
 }
 

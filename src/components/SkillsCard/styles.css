@@ -1,39 +1,41 @@
 .skills-card {
     max-width: 800px;
-    max-height: 3000px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 0;
     padding: 10px;
-    background-color: var(--pf-color-bg-fourth);
-    align-items: center;
-    box-shadow: -10px 0px 10px rgba(20, 17, 28, 1), 0px 10px 10px rgba(20, 17, 28, 1); 
+    background: var(--pf-glass-bg);
+    backdrop-filter: blur(var(--pf-glass-blur));
+    -webkit-backdrop-filter: blur(var(--pf-glass-blur));
+    border: 1px solid var(--pf-glass-border);
+    border-radius: 12px;
+    border-top: 3px solid var(--pf-color-bg-sixth);
+    animation: fadeInUp 0.6s ease-out both;
+    animation-delay: 0.3s;
 }
 
 .skills-card h3 {
-    padding: 50px 0 20px 50px;
-    font-size: 30px;
+    padding: 30px 0 20px 30px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--pf-color-font-secondary);
-
 }
 
 .skills-container {
-    width: 100%; /* Pode ajustar a largura conforme necessário */
-    max-height: 100%; /* Pode ajustar a altura conforme necessário */
+    width: 100%;
+    max-height: 100%;
     display: grid;
-    grid-gap: 32px;
-    padding: 17px 0px 17px 30px;
+    grid-gap: 20px;
+    padding: 10px 20px 30px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    
 }
 
 
 @media (max-width: 575px) {
-
     .skills-card h3 {
-        padding: 50px 0 20px 30px;
-    
+        padding: 30px 0 20px 20px;
     }
 
+    .skills-container {
+        padding: 10px 12px 20px;
+        grid-gap: 14px;
+    }
 }
-
-
